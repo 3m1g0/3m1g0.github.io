@@ -664,6 +664,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 .main-timeline .description {
     font-size: 14px;
     color: #999fb3;
+    margin-left: 16px;
 }
 
 .main-timeline .description li {
