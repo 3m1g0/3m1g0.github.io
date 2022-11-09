@@ -718,14 +718,15 @@
 							<img src="assets/images/projects/supervision.jpg" class="img-fluid" alt="">
 							<div class="portfolio-info">
 								<h4>ACE SuperVision</h4>
-								<p>Maximize ROI with this industry leading software with Quality Events, Training, Document, Risk and Learning Management, Inspection & Audit and more..</p>
+								<p>Super Vision allows users to conduct remote inspections, audits and validations hands-free using wearable devices like Google Glass, Realwear etc..</p>
 								<div class="pills">
 									<span class="badge badge-pill badge-light">Android</span>
-									<span class="badge badge-pill badge-light">LiveData</span>
-									<span class="badge badge-pill badge-light">Room</span>
-									<span class="badge badge-pill badge-light">MVVM</span>
-									<span class="badge badge-pill badge-light">Jetpack components</span>
 									<span class="badge badge-pill badge-light">Kotlin</span>
+									<span class="badge badge-pill badge-light">Room</span>
+									<span class="badge badge-pill badge-light">LiveData</span>
+									<span class="badge badge-pill badge-light">MVVM</span>
+									<span class="badge badge-pill badge-light">Google Glass EE2</span>
+									<span class="badge badge-pill badge-light">Realwear</span>
 									<span class="badge badge-pill badge-light">Zoom SDK</span>
 								</div>
 								<div class="portfolio-links">
@@ -760,6 +761,35 @@
 										<i class="fa fa-firefox" aria-hidden="true"></i>
 									</a>
 									<a href="https://play.google.com/store/apps/details?id=com.biotech.ace" target="_blank">
+										<i class="fa fa-android" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 portfolio-item filter-card">
+						<div class="portfolio-wrap">
+							<img src="assets/images/projects/epricetag.jpg" class="img-fluid" alt="">
+							<div class="portfolio-info">
+								<h4>ePricetag</h4>
+								<p>ePricetag helps in finding the online price of any product by just scanning the barcode of the product. Explore ratings & Reviews and compare prices</p>
+								<div class="pills">
+									<span class="badge badge-pill badge-light">NodeJS</span>
+									<span class="badge badge-pill badge-light">Angular</span>
+									<span class="badge badge-pill badge-light">Ionic</span>
+									<span class="badge badge-pill badge-light">AWS</span>
+									<span class="badge badge-pill badge-light">Puppeteer</span>
+									<span class="badge badge-pill badge-light">MongoDB</span>
+									<span class="badge badge-pill badge-light">Barcode</span>
+									<span class="badge badge-pill badge-light">REST API</span>
+									<span class="badge badge-pill badge-light">Docker</span>
+								</div>
+								<div class="portfolio-links">
+									<a href="https://epricetag.in/" target="_blank">
+										<i class="fa fa-firefox" aria-hidden="true"></i>
+									</a>
+									<a href="https://play.google.com/store/apps/details?id=in.epricetag" target="_blank">
 										<i class="fa fa-android" aria-hidden="true"></i>
 									</a>
 								</div>
@@ -816,35 +846,6 @@
 										<i class="fa fa-firefox" aria-hidden="true"></i>
 									</a>
 									<a href="https://appadvice.com/app/hug-smartwatch/1119312072" target="_blank">
-										<i class="fa fa-android" aria-hidden="true"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6 portfolio-item filter-card">
-						<div class="portfolio-wrap">
-							<img src="assets/images/projects/epricetag.jpg" class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>ePricetag</h4>
-								<p>ePricetag lets you know the online price of any product by just scanning the barcode of the product. Explore ratings & Reviews and compare prices</p>
-								<div class="pills">
-									<span class="badge badge-pill badge-light">NodeJS</span>
-									<span class="badge badge-pill badge-light">Angular</span>
-									<span class="badge badge-pill badge-light">Ionic</span>
-									<span class="badge badge-pill badge-light">AWS</span>
-									<span class="badge badge-pill badge-light">Puppeteer</span>
-									<span class="badge badge-pill badge-light">MongoDB</span>
-									<span class="badge badge-pill badge-light">Barcode</span>
-									<span class="badge badge-pill badge-light">REST API</span>
-									<span class="badge badge-pill badge-light">Docker</span>
-								</div>
-								<div class="portfolio-links">
-									<a href="https://epricetag.in/" target="_blank">
-										<i class="fa fa-firefox" aria-hidden="true"></i>
-									</a>
-									<a href="https://play.google.com/store/apps/details?id=in.epricetag" target="_blank">
 										<i class="fa fa-android" aria-hidden="true"></i>
 									</a>
 								</div>
@@ -936,7 +937,7 @@
 									<div class="row">
 										<div class="col-sm-12">
 											<div class="form-group">
-												<textarea class="form-control" rows="8" id="comment"
+												<textarea class="form-control" rows="5" id="comment"
 													placeholder="Message"></textarea>
 											</div>
 											<!--/.form-group-->
@@ -946,8 +947,27 @@
 									<!--/.row-->
 									<div class="row">
 										<div class="col-sm-12">
+											<div id="error-msg" class="contact-error-msg"></div>
+											<!--/.contact-error-msg-->
+										</div>
+										<!--/.col-->
+									</div>
+									<!--/.row-->
+									<div class="row">
+										<div class="col-sm-12">
+												<!-- alert -->
+												<div id="alert" class="alert alert-success" role="alert">
+													Thank you for contacting. I will get back ASAP!
+												</div>
+												<!-- alert end-->
+										</div>
+										<!--/.col-->
+									</div>
+									<!--/.row-->
+									<div class="row">
+										<div class="col-sm-12">
 											<div class="single-contact-btn">
-												<a class="contact-btn" href="#" role="button">submit</a>
+												<a class="contact-btn" role="button" onclick="showAlert()">submit</a>
 											</div>
 											<!--/.single-single-contact-btn-->
 										</div>
@@ -995,7 +1015,6 @@
 			<!--/.contact-content-->
 		</div>
 		<!--/.container-->
-
 	</section>
 	<!--/.contact-->
 	<!--contact end -->

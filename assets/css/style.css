@@ -792,9 +792,13 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.projects .portfolio-container {
+    padding-top: 32px;
+}
+
 .projects .portfolio-item {
     margin-bottom: 30px;
-
+    user-select: none;
 }
 
 .projects #portfolio-flters {
@@ -836,6 +840,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    border-radius: 4px;
     background: rgba(0, 0, 0, 0.6);
 }
 
@@ -1174,6 +1179,13 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     resize: none;
 }
 
+.contact-form .contact-error-msg {
+    color: #f00;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
 /*--contct button--*/
 .contact-form .single-contact-btn {
     display: flex;
@@ -1254,6 +1266,24 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 }
 
 /*.contact-add-info */
+
+
+/*.alert*/
+.alert {
+    display: none;
+    position: fixed;
+    right: 2rem;
+    bottom: 6rem;
+}
+
+.alert-show {
+    display: block;
+}
+
+.alert-hide {
+    display: none;
+}
+/*.alert end*/
 
 /*hm-foot-icon*/
 .hm-foot-icon {}
